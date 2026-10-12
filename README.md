@@ -61,19 +61,19 @@ The dashboard can therefore support data-driven analysis of loan portfolio risk 
 
   Snap of the line chart:
 
-![Snap Loan Amount by Purpose](Loan_amt_by_purpose.png)
+![Snap Loan Amount by Purpose](visuals/Loan_amt_by_purpose.png)
 
 - Step 18 : The DAX measure was validated by creating a temporary table visual using Loan Purpose and Loan Amount with the aggregation set to SUM. The values were compared with the results obtained from the DAX measure.
 
   Snap of the table visual:
 
-![Snap Loan Amount by Purpose validated by table visual](Loan_amt_by_pur_vldn_Table.png)
+![Snap Loan Amount by Purpose validated by table visual](validation/Loan_amt_by_pur_vldn_Table.png)
 
 - Step 19 : The results were further validated using a PivotTable in the original Excel dataset by placing Loan Purpose in Rows and Loan Amount in Values.
 
   Snap of the PivotTable:
 
-![Snap Loan Amount by Purpose validated by PivotTable](Loan_amt_by_pur_vldn_pivot.png)
+![Snap Loan Amount by Purpose validated by PivotTable](validation/Loan_amt_by_pur_vldn_pivot.png)
 
  - Step 20 : A new measure was created to calculate the average income by employment type.
 
@@ -88,7 +88,7 @@ The dashboard can therefore support data-driven analysis of loan portfolio risk 
 
   Snap of the line chart:
 
-![Average Income by Employment Type](Average_Income_by_Employment_Type.png)
+![Average Income by Employment Type](visuals/Average_Income_by_Employment_Type.png)
 
 - Step 21 : The use of the ALLEXCEPT function ensures that the measure responds to the Employment Type filter while ignoring other filters affecting the calculation.
 
@@ -118,7 +118,7 @@ The dashboard can therefore support data-driven analysis of loan portfolio risk 
 
   Snap of the line chart:
 
-  ![Default Rate by Employment Type](Default_Rate_by_Employment_Type.png)
+  ![Default Rate by Employment Type](visuals/Default_Rate_by_Employment_Type.png)
 
 - Step 25 : The Default Rate by Employment type measure was validated using a table visual in Power BI. Employment Type and Default were added to the visual. The Default column was added again and its aggregation was changed to Count, which was then displayed as a percentage. The percentage for Default = TRUE was compared with the values obtained from the DAX measure.
 
@@ -126,7 +126,7 @@ The dashboard can therefore support data-driven analysis of loan portfolio risk 
 
   Snap of the Excel validation:
 
-  ![Default Rate by Employment Type validated in Excel](Default_Rate_by_Employment_Type_Excel_Validation.png)
+  ![Default Rate by Employment Type validated in Excel](validation/Default_Rate_by_Employment_Type_Excel_Validation.png)
 
 
 
@@ -151,7 +151,7 @@ The dashboard can therefore support data-driven analysis of loan portfolio risk 
 
   Snap of the line chart:
 
-![Average Loan by Age Groups](Average_Loan_by_Age_Groups.png)
+![Average Loan by Age Groups](visuals/Average_Loan_by_Age_Groups.png)
 
 - Step 29 : The Average Loan by Age Groups measure was validated using a table visual in Power BI by adding Age Groups and the average of LoanAmount.
 
@@ -174,7 +174,7 @@ The dashboard can therefore support data-driven analysis of loan portfolio risk 
 
   Snap of the line chart:
 
-![Default Rate by Year](Default_Rate_by_Year.png)
+![Default Rate by Year](visuals/Default_Rate_by_Year.png)
 
 - Step 32 : The Default rate by Year measure was validated using a table visual in Power BI by adding Year and Default, with the Default field aggregated as Count. The calculated values were compared with the results obtained from the DAX measure.
 
@@ -225,7 +225,7 @@ The Loan Default Overview page looks like this:
 
   Snap of the line chart:
 
-![Median Loan Amount by Credit Score Category](Median_Loan_Amount_by_Credit_Score_Category.png)
+![Median Loan Amount by Credit Score Category](visuals/Median_Loan_Amount_by_Credit_Score_Category.png)
 
 - Step 39 : A new measure was created to calculate the average loan amount for customers with High credit score.
 
@@ -238,7 +238,7 @@ The Loan Default Overview page looks like this:
 
   Snap of the donut chart:
 
-![Average Loan Amount(High Credit) by Age Groups and MaritalStatus](Average_Loan_Amount_High_Credit.png)
+![Average Loan Amount(High Credit) by Age Groups and MaritalStatus](visuals/Average_Loan_Amount_High_Credit.png)
 
 - Step 41 : The Average Loan Amount(High Credit) measure was validated using a table visual in Power BI by adding Marital Status, Age Groups, Credit Score Bins, and Loan Amount with the aggregation set to Average. The values were compared with the results obtained from the measure.
 
@@ -263,7 +263,7 @@ The Loan Default Overview page looks like this:
 
   Snap of the line chart:
 
-![Total Loan by Credit Score Bins for Adults](Total_Loan_Adults_by_Credit_Score_Bins.png)
+![Total Loan by Credit Score Bins for Adults](visuals/Total_Loan_Adults_by_Credit_Score_Bins.png)
 
 - Step 44 : The Total Loan (Credit Bins) measure was validated using a table visual in Power BI by adding Age Groups, Credit Score Bins, and Loan Amount with the aggregation set to Sum. The values were compared with the results obtained from the measure.
 
@@ -289,7 +289,7 @@ The Loan Default Overview page looks like this:
 
   Snap of the clustered column chart:
 
-![Total Loan Middle Age Adults by Mortgage and Dependents](Total_Loan_Middle_Age_Adults_by_Mortgage_Dependents.png)
+![Total Loan Middle Age Adults by Mortgage and Dependents](visuals/Total_Loan_Middle_Age_Adults_by_Mortgage_Dependents.png)
 
 - Step 48 : The Total Loan (Middle Age Adults) measure was validated using a table visual in Power BI by adding HasMortgage, HasDependents, and Loan Amount with the aggregation set to Sum. The values were compared with the results obtained from the measure.
 
@@ -316,7 +316,7 @@ The Loan Default Overview page looks like this:
 
   Snap of the line chart:
 
-![Total Number of Loans by Education Type](Total_Loans_by_Education_Type.png)
+![Total Number of Loans by Education Type](visuals/Total_Loans_by_Education_Type.png)
 
 - Step 51 : The Loans by Education Type measure was validated using a table visual in Power BI by adding Education and Loan ID with the aggregation set to Count. Loan ID was also filtered using advanced filtering to include only records where Loan ID is not blank.
 
@@ -351,7 +351,7 @@ The Applicant Demographics & Financial Profile page looks like this:
 
   Snap of the line chart:
 
-![YOY Loan Amount Change](YOY_Loan_Amount_Change.png)
+![YOY Loan Amount Change](visuals/YOY_Loan_Amount_Change.png)
 
 - Step 56 : The YOY Loan Amount Change measure was formatted to display the required decimal precision. The decimal places were increased using the Measure tools formatting options.
 
@@ -377,7 +377,7 @@ The Applicant Demographics & Financial Profile page looks like this:
 
   Snap of the line chart:
 
-![YOY Default Loans Change](YOY_Default_Loans_Change.png)
+![YOY Default Loans Change](visuals/YOY_Default_Loans_Change.png)
 
 - Step 58 : A new measure was created in Measures Table 3 to calculate the Year-to-Date (YTD) loan amount.
 
@@ -394,7 +394,7 @@ The Applicant Demographics & Financial Profile page looks like this:
 
   Snap of the ribbon chart:
 
-![YTD Loan Amount by Credit Score Bins and MaritalStatus](YTD_Loan_Amount_Credit_Score_Bins_MaritalStatus.png)
+![YTD Loan Amount by Credit Score Bins and MaritalStatus](visuals/YTD_Loan_Amount_Credit_Score_Bins_MaritalStatus.png)
 
 - Step 59 : An Income Bracket calculated column was created in the Loan_default table to categorize customers based on their income.
 
@@ -417,7 +417,7 @@ The Applicant Demographics & Financial Profile page looks like this:
 
   Snap of the decomposition tree:
 
-![Loan Amount Decomposition Tree](Loan_Amount_Decomposition_Tree.png)
+![Loan Amount Decomposition Tree](visuals/Loan_Amount_Decomposition_Tree.png)
 
 - Step 61 : The decomposition tree was further explored by selecting different breakdown options. The required breakdown could also be locked after selecting the desired category.
 
