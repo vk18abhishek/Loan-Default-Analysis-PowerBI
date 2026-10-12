@@ -182,7 +182,7 @@ The dashboard can therefore support data-driven analysis of loan portfolio risk 
 
 The Loan Default Overview page looks like this:
 
-![Loan Default Overview](Loan_Default_Overview.png)
+![Loan Default Overview](images/Loan_Default_Overview.png)
 
 - Step 33 : A new Measures Table 2 was created to store the measures used on the new report page.
 
@@ -328,7 +328,7 @@ The Loan Default Overview page looks like this:
 
 The Applicant Demographics & Financial Profile page looks like this:
 
-![Applicant Demographics & Financial Profile](Applicant_Demographics_Financial_Profile.png)
+![Applicant Demographics & Financial Profile](images/Applicant_Demographics_Financial_Profile.png)
 
 - Step 53 : A new page was added to the Power BI report and named **Financial Risk Matrix**.
 
@@ -425,7 +425,7 @@ The Applicant Demographics & Financial Profile page looks like this:
 
 The Financial Risk Matrix page looks like this:
 
-![Financial Risk Matrix](Financial_Risk_Matrix.png)
+![Financial Risk Matrix](images/Financial_Risk_Matrix.png)
 
 - Step 62 : The refresh settings for the Dataflow were configured so that the data in the Dataflow can be updated when the source data in SQL Server changes.
 
